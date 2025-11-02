@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Asosiy ranglar - logodan olingan */
+    --background: 215 28% 7%;        /* Chuqur qora-ko'k fon */
+    --foreground: 210 20% 95%;       /* Oqish matn */
+
+    --card: 215 25% 10%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 210 40% 55%;           /* NGGI logodagi ko'k rang */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 20% 15%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 215 20% 15%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 210 35% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 20% 18%;
+    --input: 215 20% 18%;
+    --ring: 210 40% 55%;
+
+    --radius: 0.75rem;
+
+    /* Chart ranglari - ko'k tonlarda */
+    --chart-1: 210 50% 60%;
+    --chart-2: 215 40% 50%;
+    --chart-3: 205 45% 45%;
+    --chart-4: 220 35% 40%;
+    --chart-5: 200 40% 55%;
+
+    /* Sidebar */
+    --sidebar-background: 215 28% 7%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 210 40% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 20% 15%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 215 20% 18%;
+    --sidebar-ring: 210 40% 55%;
+  }
+
+  /* Light rejim (ixtiyoriy, lekin professional ko'rinish uchun) */
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 215 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 12%;
+
+    --primary: 210 45% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 20% 40%;
+
+    --accent: 210 30% 90%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 210 45% 50%;
+
+    --chart-1: 210 50% 55%;
+    --chart-2: 215 40% 45%;
+    --chart-3: 205 45% 40%;
+    --chart-4: 220 35% 35%;
+    --chart-5: 200 40% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 215 25% 12%;
+    --sidebar-primary: 210 45% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 94%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 210 20% 88%;
+    --sidebar-ring: 210 45% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-medium;
+  }
+}
