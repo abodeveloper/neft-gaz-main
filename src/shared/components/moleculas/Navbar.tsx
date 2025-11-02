@@ -290,9 +290,9 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
-    { code: "en", label: "English" },
-    { code: "uz", label: "O‘zbekcha" },
-    { code: "ru", label: "Русский" }, // To‘g‘ri: label: "Русский"
+    { code: "en", label: "EN" },
+    { code: "uz", label: "UZ" },
+    { code: "ru", label: "RU" }, // To‘g‘ri: label: "Русский"
   ];
 
   const handleLanguageChange = async (value: string) => {
@@ -373,7 +373,7 @@ export const Navbar = () => {
               value={i18n.resolvedLanguage || i18n.language}
               onValueChange={handleLanguageChange}
             >
-              <SelectTrigger className="w-36 h-9">
+              <SelectTrigger className="w-24 h-9">
                 <SelectValue>
                   {currentLang && (
                     <div className="flex items-center">
