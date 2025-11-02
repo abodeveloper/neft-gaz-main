@@ -15,7 +15,7 @@ export const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-b from-background via-muted/50 to-muted border-t border-border/40">
       {/* Upper section */}
-      <section className="container mx-auto py-16 grid grid-cols-1 sm:grid-cols-[0.8fr_1.4fr_0.8fr] gap-12">
+      <section className="container mx-auto py-16 grid grid-cols-1 sm:grid-cols-[0.8fr_0.8fr_1.4fr] gap-12">
         {/* Logo & description */}
         <div className="space-y-5">
           <a href="/" className="flex items-center gap-3">
@@ -54,18 +54,6 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="rounded-2xl overflow-hidden shadow-lg border border-border/40">
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.6210669376543!2d69.24007387586727!3d41.29949597131205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b7cf86b2d07%3A0x62f60772fdd8c6f1!2sTashkent!5e0!3m2!1sen!2s!4v1694871612208!5m2!1sen!2s"
-            width="100%"
-            height="200"
-            loading="lazy"
-            className="border-0"
-            allowFullScreen
-          ></iframe>
-        </div>
-
         {/* Contact Info */}
         <div className="space-y-5">
           <h4 className="text-lg font-semibold text-foreground">Aloqa</h4>
@@ -85,6 +73,18 @@ export const Footer = () => {
               <div className="leading-snug">info@nggi.uz</div>
             </li>
           </ul>
+        </div>
+
+        <div className="rounded-2xl overflow-hidden shadow-lg border border-border/40">
+          <iframe
+            title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.6210669376543!2d69.24007387586727!3d41.29949597131205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b7cf86b2d07%3A0x62f60772fdd8c6f1!2sTashkent!5e0!3m2!1sen!2s!4v1694871612208!5m2!1sen!2s"
+            width="100%"
+            height="200"
+            loading="lazy"
+            className="border-0"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
 
