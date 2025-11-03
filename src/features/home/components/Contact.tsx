@@ -26,7 +26,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 md:py-28 bg-muted/50 border-t border-border/90"
+      className="py-16 md:py-28 bg-muted/50"
     >
       <div className="container mx-auto space-y-16">
         {/* Main Contact Card – Rasmga mos layout */}
