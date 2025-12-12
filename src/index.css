@@ -4,99 +4,101 @@
 
 @layer base {
   :root {
-    /* Asosiy ranglar - logodan olingan */
-    --background: 215 28% 7%;        /* Chuqur qora-ko'k fon */
-    --foreground: 210 20% 95%;       /* Oqish matn */
+    /* ==== DARK MODE ==== */
+    --background: 228 32% 19%;        /* #1C2340 */
+    --foreground: 220 15% 92%;
 
-    --card: 215 25% 10%;
-    --card-foreground: 210 20% 95%;
+    --card: 228 28% 24%;
+    --card-foreground: 220 15% 92%;
 
-    --popover: 215 25% 10%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 228 28% 24%;
+    --popover-foreground: 220 15% 92%;
 
-    --primary: 210 40% 55%;           /* NGGI logodagi ko'k rang */
+    --primary: 215 65% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 20% 15%;
-    --secondary-foreground: 210 20% 85%;
+    --secondary: 228 25% 25%;
+    --secondary-foreground: 220 15% 85%;
 
-    --muted: 215 20% 15%;
-    --muted-foreground: 210 15% 65%;
+    --muted: 228 25% 25%;
+    --muted-foreground: 220 12% 65%;
 
-    --accent: 210 35% 45%;
+    --accent: 215 55% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 78% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 215 20% 18%;
-    --input: 215 20% 18%;
-    --ring: 210 40% 55%;
+    --border: 228 25% 28%;
+    --input: 228 25% 28%;
+    --ring: 215 65% 55%;
 
     --radius: 0.75rem;
 
-    /* Chart ranglari - ko'k tonlarda */
-    --chart-1: 210 50% 60%;
-    --chart-2: 215 40% 50%;
-    --chart-3: 205 45% 45%;
-    --chart-4: 220 35% 40%;
-    --chart-5: 200 40% 55%;
+    /* Charts */
+    --chart-1: 215 70% 55%;
+    --chart-2: 220 55% 48%;
+    --chart-3: 210 60% 45%;
+    --chart-4: 225 50% 40%;
+    --chart-5: 205 55% 52%;
 
     /* Sidebar */
-    --sidebar-background: 215 28% 7%;
-    --sidebar-foreground: 210 20% 90%;
-    --sidebar-primary: 210 40% 55%;
+    --sidebar-background: 228 32% 19%;
+    --sidebar-foreground: 220 15% 92%;
+    --sidebar-primary: 215 65% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 215 20% 15%;
-    --sidebar-accent-foreground: 210 20% 85%;
-    --sidebar-border: 215 20% 18%;
-    --sidebar-ring: 210 40% 55%;
+    --sidebar-accent: 228 25% 25%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 228 25% 28%;
+    --sidebar-ring: 215 65% 55%;
   }
 
-  /* Light rejim (ixtiyoriy, lekin professional ko'rinish uchun) */
+  /* ==== LIGHT MODE ==== */
   .light {
-    --background: 0 0% 98%;
-    --foreground: 215 25% 12%;
+    --background: 204 13% 91%;       /* #DEE4E7 HSL */
+    --foreground: 222 25% 20%;        /* matn uchun to‘qroq, kontrast */
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 12%;
+    --card: 204 10% 97%;               /* biroz farqlash uchun card */
+    --card-foreground: 222 25% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 12%;
+    --popover: 204 10% 97%;
+    --popover-foreground: 222 25% 20%;
 
-    --primary: 210 45% 50%;
+    --primary: 215 60% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 20% 94%;
-    --secondary-foreground: 215 25% 15%;
+    --secondary: 204 10% 85%;
+    --secondary-foreground: 222 25% 20%;
 
-    --muted: 210 20% 94%;
-    --muted-foreground: 215 20% 40%;
+    --muted: 204 10% 85%;
+    --muted-foreground: 222 20% 40%;
 
-    --accent: 210 30% 90%;
-    --accent-foreground: 215 25% 15%;
+    --accent: 215 55% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 78% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 210 20% 88%;
-    --input: 210 20% 88%;
-    --ring: 210 45% 50%;
+    --border: 204 10% 80%;
+    --input: 204 10% 80%;
+    --ring: 215 60% 55%;
 
-    --chart-1: 210 50% 55%;
-    --chart-2: 215 40% 45%;
-    --chart-3: 205 45% 40%;
-    --chart-4: 220 35% 35%;
-    --chart-5: 200 40% 50%;
+    /* Charts */
+    --chart-1: 215 65% 55%;
+    --chart-2: 220 55% 48%;
+    --chart-3: 210 60% 45%;
+    --chart-4: 225 50% 40%;
+    --chart-5: 205 55% 52%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 215 25% 12%;
-    --sidebar-primary: 210 45% 50%;
+    /* Sidebar */
+    --sidebar-background: 204 13% 91%; /* #DEE4E7 */
+    --sidebar-foreground: 222 25% 20%;
+    --sidebar-primary: 215 60% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 20% 94%;
-    --sidebar-accent-foreground: 215 25% 15%;
-    --sidebar-border: 210 20% 88%;
-    --sidebar-ring: 210 45% 50%;
+    --sidebar-accent: 204 10% 85%;
+    --sidebar-accent-foreground: 222 25% 20%;
+    --sidebar-border: 204 10% 80%;
+    --sidebar-ring: 215 60% 55%;
   }
 }
 

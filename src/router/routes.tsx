@@ -3,6 +3,7 @@ import { Navigate } from "react-router-dom";
 
 // Foydalanuvchi sahifalari
 const HomePage = lazy(() => import("@/features/home/HomePage"));
+const DynamicPage = lazy(() => import("@/features/dynamic-page/DynamicPage"));
 const Layout = lazy(() => import("@/layout/layout"));
 
 export const routes = [
@@ -14,6 +15,10 @@ export const routes = [
       {
         path: "/home",
         element: <HomePage />,
+      },
+      {
+        path: "/dynamic-page/:slug",
+        element: <DynamicPage />,
       },
     ],
   },

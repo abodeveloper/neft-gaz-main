@@ -37,7 +37,7 @@ const ContactFormModal = () => {
       <DialogContent className="sm:max-w-2xl max-h-screen overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold">
-            {t("Create Menu")}
+            {t("Submit message")}
           </DialogTitle>
         </DialogHeader>
 
